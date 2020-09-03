@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+
+installer() {
+  local install_type=$1
+  local version=$2
+  local install_path=$3
+
+  local tmp_download_dir
+  tmp_download_dir=$(mktemp -d -t jbang_XXXXXXX)
+
+  if ! which java >/dev/null; then
+    echo "You need a Java Runtime already installed on your computer."
+    echo "Follow the instructions for your platform or download it"
+    echo "from http://java.com/en/download"
+    exit 1
+  fi
+
+  if [ "version" != "${install_type}" ]; then
+    echo "The asdf-jbang plugin only supports intalling official"
+    echo "binary releases as built by the j'bang team."
+    echo "If you want to install another version from source, see:"
+    echo "https://github.com/jbangdev/jbang/"
+    exit 1
+  fi
+
+  # running this in a subshell
+  # we don't want to disturb current working dir
+  (
+    set -e
+
+    local tar_path="$tmp_download_dir/jbang-${version}.tar"
+    curl -Lo "$tar_path" "$(download_url "$version")" || fail "could not download jbang archive"
+    tar -xf "$tar_path" -C "$install_path" --strip-components=1 || fail "failed to extract jbang archive"
+  ) || (rm -rf "$install_path"; exit 1)
+}
+
+download_url() {
+  local version=$1
+  echo "https://github.com/jbangdev/jbang/releases/download/v${version}/jbang-${version}.tar"
+}
+
+fail() {
+  echo "asdf-jbang error: " "$@"
+  exit 1
+}
+
+installer "$ASDF_INSTALL_TYPE" "$ASDF_INSTALL_VERSION" "$ASDF_INSTALL_PATH"
