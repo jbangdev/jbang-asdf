@@ -1,7 +1,7 @@
 # asdf-jbang
 
-[![GitHub Actions Status](https://github.com/joschi/asdf-jbang/workflows/Main%20workflow/badge.svg?branch=main)](https://github.com/joschi/asdf-jbang/actions)
-[![GitHub license](https://img.shields.io/github/license/joschi/asdf-jbang?style=plastic)](https://github.com/joschi/asdf-jbang/blob/master/LICENSE)
+[![GitHub Actions Status](https://github.com/jbangdev/jbang-asdf/workflows/Main%20workflow/badge.svg?branch=main)](https://github.com/jbangdev/jbang-asdf/actions)
+[![GitHub license](https://img.shields.io/github/license/jbangdev/jbang-asdf?style=plastic)](https://github.com/jbangdev/jbang-asdf/blob/master/LICENSE)
 
 ## jbang
 
@@ -10,7 +10,7 @@
 ## Install
 
 ```bash
-asdf plugin-add jbang https://github.com/joschi/asdf-jbang
+asdf plugin-add jbang https://github.com/jbangdev/jbang-asdf
 ```
 
 ## Use
