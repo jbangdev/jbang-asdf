@@ -1,4 +1,4 @@
-# asdf-jbang
+# jbang-asdf
 
 [![GitHub Actions Status](https://github.com/jbangdev/jbang-asdf/workflows/Main%20workflow/badge.svg?branch=main)](https://github.com/jbangdev/jbang-asdf/actions)
 [![GitHub license](https://img.shields.io/github/license/jbangdev/jbang-asdf?style=plastic)](https://github.com/jbangdev/jbang-asdf/blob/master/LICENSE)
