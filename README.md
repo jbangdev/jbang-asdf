@@ -1,4 +1,4 @@
-# jbang-asdf [![Build](https://github.com/jbangdev/jbang-asdf/workflows/build/badge.svg)](https://github.com/jbangdev/jbang-asdf/actions) [![License](https://img.shields.io/github/license/jbangdev/jbang-asdf?style=plastic)](https://github.com/jbangdev/jbang-asdf/blob/master/LICENSE)
+# jbang-asdf [![build](https://github.com/jbangdev/jbang-asdf/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/jbangdev/jbang-asdf/actions/workflows/build.yml) [![License](https://img.shields.io/github/license/jbangdev/jbang-asdf?style=plastic)](https://github.com/jbangdev/jbang-asdf/blob/master/LICENSE)
 
 [jbang](https://jbang.dev/) plugin for the [asdf version manager](https://asdf-vm.com).
 
