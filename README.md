@@ -1,18 +1,29 @@
-# jbang-asdf
+# jbang-asdf [![Build](https://github.com/jbangdev/jbang-asdf/workflows/build/badge.svg)](https://github.com/jbangdev/jbang-asdf/actions) [![License](https://img.shields.io/github/license/jbangdev/jbang-asdf?style=plastic)](https://github.com/jbangdev/jbang-asdf/blob/master/LICENSE)
 
-[![GitHub Actions Status](https://github.com/jbangdev/jbang-asdf/workflows/Main%20workflow/badge.svg?branch=main)](https://github.com/jbangdev/jbang-asdf/actions)
-[![GitHub license](https://img.shields.io/github/license/jbangdev/jbang-asdf?style=plastic)](https://github.com/jbangdev/jbang-asdf/blob/master/LICENSE)
+[jbang](https://jbang.dev/) plugin for the [asdf version manager](https://asdf-vm.com).
 
-## jbang
-
-<https://github.com/jbangdev/jbang>
-
-## Install
+## Install Plugin
 
 ```bash
-asdf plugin-add jbang https://github.com/jbangdev/jbang-asdf
+asdf plugin-add jbang
+or
+asdf plugin-add https://github.com/jbangdev/jbang-asdf
 ```
 
-## Use
+## Install jbang
+
+```shell
+# Show all installable versions
+asdf list-all jbang
+
+# Install specific version
+asdf install jbang latest
+
+# Set a version globally (on your ~/.tool-versions file)
+asdf global jbang latest
+
+# Now ag commands are available
+jbang
+```
 
 Check out the [asdf](https://github.com/asdf-vm/asdf) readme for instructions on how to install and manage versions of `jbang`.
