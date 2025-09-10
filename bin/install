@@ -9,8 +9,8 @@ installer() {
   tmp_download_dir=$(mktemp -d -t jbang_XXXXXXX)
 
   if [ "version" != "${install_type}" ]; then
-    echo "The asdf-jbang plugin only supports intalling official"
-    echo "binary releases as built by the j'bang team."
+    echo "The asdf-jbang plugin only supports installing official"
+    echo "binary releases as built by the jbang team."
     echo "If you want to install another version from source, see:"
     echo "https://github.com/jbangdev/jbang/"
     exit 1
@@ -29,7 +29,7 @@ installer() {
 
 download_url() {
   local version=$1
-  echo "https://github.com/jbangdev/jbang/releases/download/v${version}/jbang-${version}.tar"
+  echo "https://www.jbang.dev/releases/download/v${version}/jbang-${version}.tar"
 }
 
 fail() {
